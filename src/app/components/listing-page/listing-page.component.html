@@ -1,0 +1,51 @@
+
+<div class="title">
+<h1 id="title_text">LISTING PAGE </h1> 
+<div class="search">
+    <input type="text" [(ngModel)]="term" class="searchTerm" placeholder="Search Name or Language..">
+    <button (click)="searchVal(term)">Search</button>
+  </div>
+  <div class="sorting" style="position: relative;margin: 10px;scale: 1%;">
+    <h3>Sort by:</h3>
+    <button (click)="sortascs()">Asc Stars</button>
+    <button (click)="sortdscs()">Dsc Stars</button>
+    <button (click)="sortascn()">Asc Names</button>
+    <button (click)="sortdscn()">Dsc Names</button>
+  </div>
+  <br>
+  
+  
+</div>
+<div class ="background">
+
+
+<div *ngFor = "let model of  pagination_data">
+    <div class = "card">
+    
+    <i>Name:  {{model.name}}</i>
+    <br>
+    <i>Full name: {{model.full_name}}</i>
+    <br>
+    <i>Description: {{model.description}}</i>
+    <br>
+    <i>Owner Name: {{model.owner_login}}</i>
+    <br>
+    <i>Star Count: {{model.stargazers_count}}</i>
+    <br>
+    <i>Number of forks: {{model.forks_count}}</i>
+    <br>
+    <i>Language: {{model.language}}</i>
+    <br>
+    </div>
+</div>
+
+<div class = "pagination_btn" >
+   <button (click)="firstpage()">FIRST</button>
+    <button (click)="backpage()">BACK</button>
+    <button (click)="nextpage()" >NEXT</button>
+    <button (click)="lastpage()">LAST</button>
+</div>
+
+    
+
+</div>

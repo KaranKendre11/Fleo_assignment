@@ -1,0 +1,60 @@
+
+  .title{
+      
+        background-color: wheat;
+        align-items: center;   
+    
+        color: #7c795d;  font-size: 30px; font-weight: normal; line-height: 48px; margin: 0;
+    }
+    *{
+        font-weight: bold;
+        font: 20px sans-serif;
+    }
+    .title_text{
+        font-family: 'Trocchi', serif;
+    }
+
+
+    .background{display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-gap: 20px;
+        align-items: center;
+        background-color: wheat;
+        
+        
+    }
+    .card {
+     
+       
+    
+        grid-template-columns: repeat(3, 1fr);
+        
+        grid-auto-rows: auto;
+        
+        grid-gap: 1rem;
+        
+        border: 10px solid #3C0D2B;
+        
+        border-radius: 10px;
+        padding: 1rem; 
+        background-color:#F4FFDC;
+        
+        }
+
+        .pagination_btn{
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            height: 100px;
+        }
+
+        .search{
+            padding: 0.75%;
+            size: 10px;
+        }
+        .search{
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            height: 10px;
+        }
